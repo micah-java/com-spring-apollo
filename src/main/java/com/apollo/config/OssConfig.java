@@ -16,8 +16,8 @@ public class OssConfig {
     public S3Presigner s3Presigner(){
         //
         AwsBasicCredentials awsBasicCredentials = AwsBasicCredentials.create(
-                "S6M2JXHNTVG",
-                "luzbhUIwkLPLADLudEw5658XT65947"
+                "",
+                ""
         );
         return S3Presigner.builder()
                 .credentialsProvider(StaticCredentialsProvider.create(awsBasicCredentials))
@@ -29,8 +29,8 @@ public class OssConfig {
     public S3Client s3Client(){
         //
         AwsBasicCredentials awsBasicCredentials = AwsBasicCredentials.create(
-                "S6M2JXHNTVG",
-                "luzbhUIwkLPLADLudEw5658XT65947"
+                "",
+                ""
         );
         return S3Client.builder().region(Region.of("ap-east-1"))
                 .credentialsProvider(StaticCredentialsProvider.create(awsBasicCredentials))
