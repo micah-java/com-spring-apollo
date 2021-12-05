@@ -1,0 +1,12 @@
+server:
+  port: 9090
+app:
+  id: order-service
+apollo:
+  meta: http://127.0.0.1:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+env: DEV
+
